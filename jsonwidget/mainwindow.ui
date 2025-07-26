@@ -1,0 +1,5247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>940</width>
+    <height>902</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QDockWidget" name="dockWidget_Chargepoint">
+      <property name="windowTitle">
+       <string/>
+      </property>
+      <widget class="QWidget" name="dockWidgetContents_5">
+       <widget class="QPushButton" name="pushButton_StartChargePoint">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>12</y>
+          <width>111</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text">
+         <string>Start Charge Point</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButton_StopChargePoint">
+        <property name="geometry">
+         <rect>
+          <x>120</x>
+          <y>12</y>
+          <width>111</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text">
+         <string>Stop Charge Point</string>
+        </property>
+       </widget>
+       <widget class="QTabWidget" name="tabWidget">
+        <property name="geometry">
+         <rect>
+          <x>9</x>
+          <y>45</y>
+          <width>641</width>
+          <height>841</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>16</width>
+          <height>16</height>
+         </size>
+        </property>
+        <widget class="QWidget" name="Central_System_Client">
+         <attribute name="title">
+          <string>Central System Client</string>
+         </attribute>
+         <widget class="QPushButton" name="pushButton_Diagnostics_Status_Notification">
+          <property name="geometry">
+           <rect>
+            <x>320</x>
+            <y>0</y>
+            <width>161</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Diagnostics Status Notification</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_Bootnotification">
+          <property name="geometry">
+           <rect>
+            <x>110</x>
+            <y>0</y>
+            <width>111</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Boot Notification</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_Metervalues">
+          <property name="geometry">
+           <rect>
+            <x>250</x>
+            <y>30</y>
+            <width>81</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Meter Values</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_Datatransfer">
+          <property name="geometry">
+           <rect>
+            <x>220</x>
+            <y>0</y>
+            <width>101</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Data Transfer</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_Firmware_Status_Notification">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>30</y>
+            <width>171</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Firmware Status Notification</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_StartTransaction">
+          <property name="geometry">
+           <rect>
+            <x>330</x>
+            <y>30</y>
+            <width>131</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Start Transaction</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_Stop_Notification">
+          <property name="geometry">
+           <rect>
+            <x>150</x>
+            <y>60</y>
+            <width>121</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Stop Transaction</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_Authorize">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>111</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Authorize</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_Heartbeat">
+          <property name="geometry">
+           <rect>
+            <x>170</x>
+            <y>30</y>
+            <width>81</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Heartbeat</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_Status_Notification">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>60</y>
+            <width>151</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Status Notification</string>
+          </property>
+         </widget>
+         <widget class="QWidget" name="widget_authorize" native="true">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>90</y>
+            <width>641</width>
+            <height>801</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <strikeout>false</strikeout>
+           </font>
+          </property>
+          <property name="focusPolicy">
+           <enum>Qt::NoFocus</enum>
+          </property>
+          <property name="autoFillBackground">
+           <bool>true</bool>
+          </property>
+          <widget class="QLabel" name="label">
+           <property name="geometry">
+            <rect>
+             <x>460</x>
+             <y>20</y>
+             <width>61</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Response</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_ParentIdTag_Authorize_Response">
+           <property name="geometry">
+            <rect>
+             <x>340</x>
+             <y>150</y>
+             <width>71</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Parent id tag</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_ExpiryDate_Authorize_Response">
+           <property name="geometry">
+            <rect>
+             <x>340</x>
+             <y>100</y>
+             <width>71</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Expiry Date</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_Status_Authorize_Response">
+           <property name="geometry">
+            <rect>
+             <x>340</x>
+             <y>200</y>
+             <width>47</width>
+             <height>13</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Status</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_ParentIdTag_Authorize_Response">
+           <property name="geometry">
+            <rect>
+             <x>440</x>
+             <y>140</y>
+             <width>161</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background:rgb(195,195,195)</string>
+           </property>
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+           <property name="cursorMoveStyle">
+            <enum>Qt::LogicalMoveStyle</enum>
+           </property>
+           <property name="clearButtonEnabled">
+            <bool>false</bool>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_ExpiryDate_Authorize_Response">
+           <property name="geometry">
+            <rect>
+             <x>440</x>
+             <y>90</y>
+             <width>161</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background:rgb(195, 195, 195)</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="Line" name="line">
+           <property name="geometry">
+            <rect>
+             <x>310</x>
+             <y>0</y>
+             <width>16</width>
+             <height>801</height>
+            </rect>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_5">
+           <property name="geometry">
+            <rect>
+             <x>130</x>
+             <y>20</y>
+             <width>61</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Request</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_IdTag_Authorize_Request">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>100</y>
+             <width>61</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>ID Tag</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_IdTag_Authorize_Request">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="geometry">
+            <rect>
+             <x>120</x>
+             <y>90</y>
+             <width>161</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="pushButton_Send_Authorization_Req">
+           <property name="geometry">
+            <rect>
+             <x>70</x>
+             <y>180</y>
+             <width>181</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Send Authorization Request</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_Status_Authorize_Response">
+           <property name="geometry">
+            <rect>
+             <x>440</x>
+             <y>190</y>
+             <width>161</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background:rgb(195,195,195)</string>
+           </property>
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="widget_bootnotification" native="true">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>90</y>
+            <width>641</width>
+            <height>801</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <strikeout>false</strikeout>
+           </font>
+          </property>
+          <property name="focusPolicy">
+           <enum>Qt::NoFocus</enum>
+          </property>
+          <property name="autoFillBackground">
+           <bool>true</bool>
+          </property>
+          <widget class="QLabel" name="label_2">
+           <property name="geometry">
+            <rect>
+             <x>130</x>
+             <y>20</y>
+             <width>61</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Request</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_Interval_bootnotification_Response">
+           <property name="geometry">
+            <rect>
+             <x>340</x>
+             <y>120</y>
+             <width>61</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Interval</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_CurrentTime_bootnotification_Response">
+           <property name="geometry">
+            <rect>
+             <x>340</x>
+             <y>70</y>
+             <width>71</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Current Time</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_Status_bootnotification_Response">
+           <property name="geometry">
+            <rect>
+             <x>340</x>
+             <y>170</y>
+             <width>47</width>
+             <height>13</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Status</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_Interval_bootnotification_Response">
+           <property name="geometry">
+            <rect>
+             <x>440</x>
+             <y>110</y>
+             <width>161</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background:rgb(195,195,195)</string>
+           </property>
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+           <property name="cursorMoveStyle">
+            <enum>Qt::LogicalMoveStyle</enum>
+           </property>
+           <property name="clearButtonEnabled">
+            <bool>false</bool>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_CurrentTime_bootnotification_Response">
+           <property name="geometry">
+            <rect>
+             <x>440</x>
+             <y>60</y>
+             <width>161</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background:rgb(195,195,195)</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="Line" name="line_2">
+           <property name="geometry">
+            <rect>
+             <x>310</x>
+             <y>0</y>
+             <width>16</width>
+             <height>801</height>
+            </rect>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_6">
+           <property name="geometry">
+            <rect>
+             <x>460</x>
+             <y>20</y>
+             <width>61</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Response</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_SerialNumber_bootnotification_Request">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>70</y>
+             <width>81</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Serial Number</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_SerialNumber_bootnotification_Request">
+           <property name="geometry">
+            <rect>
+             <x>130</x>
+             <y>60</y>
+             <width>161</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="inputMethodHints">
+            <set>Qt::ImhNone</set>
+           </property>
+           <property name="frame">
+            <bool>true</bool>
+           </property>
+           <property name="readOnly">
+            <bool>false</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_Model_bootnotification_Request">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>120</y>
+             <width>81</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Model</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_SerialNumChgpoint_bootnotification_Request">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>160</y>
+             <width>81</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Serial number</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_IdTag_Authorize_Request_5">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>180</y>
+             <width>81</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>charge point</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_Model_bootnotification_Request">
+           <property name="geometry">
+            <rect>
+             <x>130</x>
+             <y>110</y>
+             <width>161</width>
+             <height>31</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_SerialNumChgpoint_bootnotification_Request">
+           <property name="geometry">
+            <rect>
+             <x>130</x>
+             <y>160</y>
+             <width>161</width>
+             <height>31</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_vendor_bootnotification_Request">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>220</y>
+             <width>81</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Vendor</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_vendor_bootnotification_Request">
+           <property name="geometry">
+            <rect>
+             <x>130</x>
+             <y>210</y>
+             <width>161</width>
+             <height>31</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_firmwareversion_bootnotification_Request">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>270</y>
+             <width>81</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Firmware version</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_firmwareversion_bootnotification_Request">
+           <property name="geometry">
+            <rect>
+             <x>130</x>
+             <y>260</y>
+             <width>161</width>
+             <height>31</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_Iccid_bootnotification_Request">
+           <property name="geometry">
+            <rect>
+             <x>130</x>
+             <y>310</y>
+             <width>161</width>
+             <height>31</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_Lccid_bootnotification_Request">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>320</y>
+             <width>81</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Iccid</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_Imsi_bootnotification_Request">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>370</y>
+             <width>81</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Imsi</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_Imsi_bootnotification_Request">
+           <property name="geometry">
+            <rect>
+             <x>130</x>
+             <y>360</y>
+             <width>161</width>
+             <height>31</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_MeterSerialNum_bootnotification_Request">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>410</y>
+             <width>81</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Meter Serial</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_IdTag_Authorize_Request_11">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>430</y>
+             <width>81</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Number</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_MeterSerialNum_bootnotification_Request">
+           <property name="geometry">
+            <rect>
+             <x>130</x>
+             <y>410</y>
+             <width>161</width>
+             <height>31</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_MeterType_bootnotification_Request">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>470</y>
+             <width>81</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Meter type</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_MeterType_bootnotification_Request">
+           <property name="geometry">
+            <rect>
+             <x>130</x>
+             <y>460</y>
+             <width>161</width>
+             <height>31</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_Status_bootnotification_Response">
+           <property name="geometry">
+            <rect>
+             <x>440</x>
+             <y>160</y>
+             <width>161</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background:rgb(195,195,195)</string>
+           </property>
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="pushButton_send_bootNotification_req">
+           <property name="geometry">
+            <rect>
+             <x>60</x>
+             <y>520</y>
+             <width>201</width>
+             <height>41</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Send BootNotification Request</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="widget_DataTransfer" native="true">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>90</y>
+            <width>641</width>
+            <height>801</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <strikeout>false</strikeout>
+           </font>
+          </property>
+          <property name="focusPolicy">
+           <enum>Qt::NoFocus</enum>
+          </property>
+          <property name="autoFillBackground">
+           <bool>true</bool>
+          </property>
+          <widget class="QLabel" name="label_4">
+           <property name="geometry">
+            <rect>
+             <x>460</x>
+             <y>20</y>
+             <width>61</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Response</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_DataReceived_Datatransfer_Response">
+           <property name="geometry">
+            <rect>
+             <x>340</x>
+             <y>110</y>
+             <width>71</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Data Received</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_Status_Datatransfer_Response">
+           <property name="geometry">
+            <rect>
+             <x>340</x>
+             <y>60</y>
+             <width>47</width>
+             <height>13</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Status</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_DataReceived_Datatransfer_Response">
+           <property name="geometry">
+            <rect>
+             <x>340</x>
+             <y>140</y>
+             <width>271</width>
+             <height>181</height>
+            </rect>
+           </property>
+           <property name="readOnly">
+            <bool>false</bool>
+           </property>
+           <property name="cursorMoveStyle">
+            <enum>Qt::LogicalMoveStyle</enum>
+           </property>
+           <property name="clearButtonEnabled">
+            <bool>false</bool>
+           </property>
+          </widget>
+          <widget class="Line" name="line_4">
+           <property name="geometry">
+            <rect>
+             <x>310</x>
+             <y>0</y>
+             <width>16</width>
+             <height>801</height>
+            </rect>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_8">
+           <property name="geometry">
+            <rect>
+             <x>130</x>
+             <y>20</y>
+             <width>61</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Request</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_Data_Datatransfer_Request">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>170</y>
+             <width>81</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Data</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_Data_Datatransfer_Request">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>200</y>
+             <width>251</width>
+             <height>151</height>
+            </rect>
+           </property>
+           <property name="inputMethodHints">
+            <set>Qt::ImhNone</set>
+           </property>
+           <property name="frame">
+            <bool>true</bool>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           </property>
+           <property name="readOnly">
+            <bool>false</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_vendorID_Datatransfer_Request">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>60</y>
+             <width>81</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Vendor ID</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_vendorID_Datatransfer_Request">
+           <property name="geometry">
+            <rect>
+             <x>120</x>
+             <y>50</y>
+             <width>161</width>
+             <height>31</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_MessageID_Datatransfer_Request">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>120</y>
+             <width>81</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Message ID</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_MessageID2_Datatransfer_Request">
+           <property name="geometry">
+            <rect>
+             <x>120</x>
+             <y>110</y>
+             <width>161</width>
+             <height>31</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="pushButton_Send_Data_transfer_req">
+           <property name="geometry">
+            <rect>
+             <x>90</x>
+             <y>370</y>
+             <width>151</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Send Data Transfer Request</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_Status_Datatransfer_Response">
+           <property name="geometry">
+            <rect>
+             <x>440</x>
+             <y>50</y>
+             <width>161</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background:rgb(195,195,195)</string>
+           </property>
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="widget_DiagnosticsStatusNotification" native="true">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>90</y>
+            <width>641</width>
+            <height>801</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <strikeout>false</strikeout>
+           </font>
+          </property>
+          <property name="focusPolicy">
+           <enum>Qt::NoFocus</enum>
+          </property>
+          <property name="autoFillBackground">
+           <bool>true</bool>
+          </property>
+          <widget class="QLabel" name="label_3">
+           <property name="geometry">
+            <rect>
+             <x>460</x>
+             <y>20</y>
+             <width>61</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Response</string>
+           </property>
+          </widget>
+          <widget class="Line" name="line_3">
+           <property name="geometry">
+            <rect>
+             <x>310</x>
+             <y>0</y>
+             <width>16</width>
+             <height>801</height>
+            </rect>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_7">
+           <property name="geometry">
+            <rect>
+             <x>130</x>
+             <y>20</y>
+             <width>61</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Request</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_Status_diagnosticsnotification_Request">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>80</y>
+             <width>71</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Status</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_no_data_availfor_diagnostics_res">
+           <property name="geometry">
+            <rect>
+             <x>410</x>
+             <y>80</y>
+             <width>161</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>No Response component to show</string>
+           </property>
+          </widget>
+          <widget class="QComboBox" name="comboBox_Status_diagnosticsnotification_Request">
+           <property name="geometry">
+            <rect>
+             <x>120</x>
+             <y>70</y>
+             <width>161</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <item>
+            <property name="text">
+             <string>IDLE</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>UPLOADED</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>UPLOAD_FAILED</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>UPLOADING</string>
+            </property>
+           </item>
+          </widget>
+          <widget class="QPushButton" name="pushButton_Send_DiagnosticsStatusNotification_Req">
+           <property name="geometry">
+            <rect>
+             <x>70</x>
+             <y>160</y>
+             <width>181</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Send Status Notification Request</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="widget_FirmwareStatusNotification" native="true">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>90</y>
+            <width>641</width>
+            <height>801</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <strikeout>false</strikeout>
+           </font>
+          </property>
+          <property name="focusPolicy">
+           <enum>Qt::NoFocus</enum>
+          </property>
+          <property name="autoFillBackground">
+           <bool>true</bool>
+          </property>
+          <widget class="QLabel" name="label_13">
+           <property name="geometry">
+            <rect>
+             <x>460</x>
+             <y>20</y>
+             <width>61</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Response</string>
+           </property>
+          </widget>
+          <widget class="Line" name="line_7">
+           <property name="geometry">
+            <rect>
+             <x>310</x>
+             <y>0</y>
+             <width>16</width>
+             <height>801</height>
+            </rect>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_14">
+           <property name="geometry">
+            <rect>
+             <x>130</x>
+             <y>20</y>
+             <width>61</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Request</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_Status_firmwarenotification_Request">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>90</y>
+             <width>61</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Status</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_Nodataavail_Response">
+           <property name="geometry">
+            <rect>
+             <x>410</x>
+             <y>90</y>
+             <width>161</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>No Response component to show</string>
+           </property>
+          </widget>
+          <widget class="QComboBox" name="comboBox_Status_firmwarenotification_Request">
+           <property name="geometry">
+            <rect>
+             <x>120</x>
+             <y>80</y>
+             <width>161</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <item>
+            <property name="text">
+             <string>IDLE</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>DOWNLOADED</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>DOWNLOADED_FAILED</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>DOWNLOADING</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>INSTALLATION_FAILED</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>INSTALLED</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>INSTALLING</string>
+            </property>
+           </item>
+          </widget>
+          <widget class="QPushButton" name="pushButton_frimware_notification_Req">
+           <property name="geometry">
+            <rect>
+             <x>70</x>
+             <y>160</y>
+             <width>181</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Send Firmware Notification Request</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="widget_HeartBeat" native="true">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>90</y>
+            <width>641</width>
+            <height>801</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <strikeout>false</strikeout>
+           </font>
+          </property>
+          <property name="focusPolicy">
+           <enum>Qt::NoFocus</enum>
+          </property>
+          <property name="autoFillBackground">
+           <bool>true</bool>
+          </property>
+          <widget class="QLabel" name="label_21">
+           <property name="geometry">
+            <rect>
+             <x>460</x>
+             <y>20</y>
+             <width>61</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Response</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_CurrentTime_HeartBeat_Response">
+           <property name="geometry">
+            <rect>
+             <x>340</x>
+             <y>70</y>
+             <width>71</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Current time</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_CurrentTime_HeartBeat_Response">
+           <property name="geometry">
+            <rect>
+             <x>440</x>
+             <y>60</y>
+             <width>161</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background:rgb(195, 195, 195)</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="Line" name="line_11">
+           <property name="geometry">
+            <rect>
+             <x>310</x>
+             <y>0</y>
+             <width>16</width>
+             <height>801</height>
+            </rect>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_22">
+           <property name="geometry">
+            <rect>
+             <x>130</x>
+             <y>20</y>
+             <width>61</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Request</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="pushButton_Send_HeartBeat_Req">
+           <property name="geometry">
+            <rect>
+             <x>70</x>
+             <y>60</y>
+             <width>191</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Send HeartBeat Request</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="widget_MeterValues" native="true">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>90</y>
+            <width>641</width>
+            <height>801</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <strikeout>false</strikeout>
+           </font>
+          </property>
+          <property name="focusPolicy">
+           <enum>Qt::NoFocus</enum>
+          </property>
+          <property name="autoFillBackground">
+           <bool>true</bool>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">backgroundcolor: rgb(200, 198, 197)</string>
+          </property>
+          <widget class="QLabel" name="label_23">
+           <property name="geometry">
+            <rect>
+             <x>460</x>
+             <y>20</y>
+             <width>61</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Response</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_ConnectorID_Metervalue_Request">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>70</y>
+             <width>71</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Connector ID</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_ConnectorID_Metervalue_Request">
+           <property name="geometry">
+            <rect>
+             <x>110</x>
+             <y>60</y>
+             <width>171</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="font">
+            <font>
+             <kerning>true</kerning>
+            </font>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::LeftToRight</enum>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background:rgb(195,195,195)</string>
+           </property>
+           <property name="inputMethodHints">
+            <set>Qt::ImhNone</set>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           </property>
+           <property name="readOnly">
+            <bool>false</bool>
+           </property>
+           <property name="clearButtonEnabled">
+            <bool>false</bool>
+           </property>
+          </widget>
+          <widget class="Line" name="line_12">
+           <property name="geometry">
+            <rect>
+             <x>310</x>
+             <y>0</y>
+             <width>16</width>
+             <height>801</height>
+            </rect>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_24">
+           <property name="geometry">
+            <rect>
+             <x>130</x>
+             <y>20</y>
+             <width>61</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Request</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_Nodataavail_2">
+           <property name="geometry">
+            <rect>
+             <x>410</x>
+             <y>90</y>
+             <width>161</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>No Response component to show</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_TransactionID_Metervalue_Request">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>110</y>
+             <width>71</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Transaction ID</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_TransactionID_Metervalue_Request">
+           <property name="geometry">
+            <rect>
+             <x>110</x>
+             <y>100</y>
+             <width>171</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background:rgb(195,195,195)</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="readOnly">
+            <bool>false</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_25">
+           <property name="geometry">
+            <rect>
+             <x>100</x>
+             <y>140</y>
+             <width>81</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>- Meter Values - </string>
+           </property>
+          </widget>
+          <widget class="QComboBox" name="comboBox_Metervalue_Request">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>160</y>
+             <width>161</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <item>
+            <property name="text">
+             <string>Meter Values 0 </string>
+            </property>
+           </item>
+          </widget>
+          <widget class="QPushButton" name="pushButton_addmetervalue">
+           <property name="geometry">
+            <rect>
+             <x>180</x>
+             <y>160</y>
+             <width>41</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="acceptDrops">
+            <bool>false</bool>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="inputMethodHints">
+            <set>Qt::ImhNone</set>
+           </property>
+           <property name="text">
+            <string>+</string>
+           </property>
+           <property name="autoDefault">
+            <bool>false</bool>
+           </property>
+           <property name="default">
+            <bool>false</bool>
+           </property>
+           <property name="flat">
+            <bool>false</bool>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="pushButton_delmetervalue">
+           <property name="geometry">
+            <rect>
+             <x>230</x>
+             <y>160</y>
+             <width>41</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>-</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_26">
+           <property name="geometry">
+            <rect>
+             <x>100</x>
+             <y>190</y>
+             <width>81</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>- Meter Value - </string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_Timestamp_Metervalue_Request">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>220</y>
+             <width>71</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Timestamp</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_Timestamp_MeterValue_Request">
+           <property name="geometry">
+            <rect>
+             <x>110</x>
+             <y>210</y>
+             <width>171</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background:rgb(195,195,195)</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="readOnly">
+            <bool>false</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_27">
+           <property name="geometry">
+            <rect>
+             <x>100</x>
+             <y>250</y>
+             <width>81</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>- Meter Value - </string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="pushButton_delsampledvalue">
+           <property name="geometry">
+            <rect>
+             <x>230</x>
+             <y>270</y>
+             <width>41</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>-</string>
+           </property>
+          </widget>
+          <widget class="QComboBox" name="comboBox_Sampledvalue_Metervalue_Req">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>270</y>
+             <width>161</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <item>
+            <property name="text">
+             <string>SampledValues 0 </string>
+            </property>
+           </item>
+          </widget>
+          <widget class="QPushButton" name="pushButton_addsampledvalue">
+           <property name="geometry">
+            <rect>
+             <x>180</x>
+             <y>270</y>
+             <width>41</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>+</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_value_Metervalue_Request">
+           <property name="geometry">
+            <rect>
+             <x>110</x>
+             <y>300</y>
+             <width>171</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="readOnly">
+            <bool>false</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_value_Metervalue_Req">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>310</y>
+             <width>71</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Value</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_Context_Metervalue_Req">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>340</y>
+             <width>71</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Context</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_format_Metervalue_Req">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>370</y>
+             <width>71</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Format</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_measurand_Metervalue_Req">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>400</y>
+             <width>71</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Measurand</string>
+           </property>
+          </widget>
+          <widget class="QComboBox" name="comboBox_context_Metervalue_Request">
+           <property name="geometry">
+            <rect>
+             <x>110</x>
+             <y>340</y>
+             <width>201</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <item>
+            <property name="text">
+             <string>INTERRUPTION_BEGIN</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>INTERRUPTION_END</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>OTHER</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>SAMPLE_CLOCK</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>SAMPLE_PERIODIC</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>TRANSACTION_BEGIN</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>TRANSACTION_END</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>TRIGGER</string>
+            </property>
+           </item>
+          </widget>
+          <widget class="QComboBox" name="comboBox_format_Metervalue_Req">
+           <property name="geometry">
+            <rect>
+             <x>110</x>
+             <y>370</y>
+             <width>201</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="inputMethodHints">
+            <set>Qt::ImhNone</set>
+           </property>
+           <item>
+            <property name="text">
+             <string>RAW</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>SIGNED_DATA</string>
+            </property>
+           </item>
+          </widget>
+          <widget class="QComboBox" name="comboBox_measurand_Metervalue_Req">
+           <property name="geometry">
+            <rect>
+             <x>110</x>
+             <y>400</y>
+             <width>201</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <item>
+            <property name="text">
+             <string>CURRENT_EXPORT</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>CURRENT_IMPORT</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>CURRENT_OFFERED</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>ENERGY_ACTIVE_EXPORT_REGISTER</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>ENERGY_ACTIVE_IMPORT_REGISTER</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>ENERGY_REACTIVE_EXPORT_REGISTER</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>ENERGY_REACTIVE_IMPORT_REGISTER</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>ENERGY_ACTIVE_EXPORT_INTERVAL</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>ENERGY_ACTIVE_IMPORT_INTERVAL</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>ENERGY_REACTIVE_EXPORT_INTERVAL</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>ENERGY_REACTIVE_IMPORT_INTERVAL</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>FREQUENCY</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>POWER_ACTIVE_EXPORT</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>POWER_ACTIVE_IMPORT</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>POWER_FACTOR</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>POWER_OFFERED</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>POWER_REACTIVE_EXPORT</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>POWER_REACTIVE_IMPORT</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>RPM</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>SO_C</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>TEMPERATURE</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>VOLTAGE</string>
+            </property>
+           </item>
+          </widget>
+          <widget class="QComboBox" name="comboBox_phase_Metervalue_Req">
+           <property name="geometry">
+            <rect>
+             <x>110</x>
+             <y>430</y>
+             <width>201</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <item>
+            <property name="text">
+             <string>L_1</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>L_2</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>L_3</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>N</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>L_1_N</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>L_2_N</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>L_3_N</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>L_1_L_2</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>L_2_L_3</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>L_3_L_1</string>
+            </property>
+           </item>
+          </widget>
+          <widget class="QLabel" name="label_phase_Metervalue_Req">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>430</y>
+             <width>71</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Phase</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_location_Metervalue_Req">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>460</y>
+             <width>71</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Location</string>
+           </property>
+          </widget>
+          <widget class="QComboBox" name="comboBox_location_Metervalue_Req">
+           <property name="geometry">
+            <rect>
+             <x>110</x>
+             <y>460</y>
+             <width>201</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <item>
+            <property name="text">
+             <string>BODY</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>CABLE</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>EV</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>INLET</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>OUTLET</string>
+            </property>
+           </item>
+          </widget>
+          <widget class="QLabel" name="label_unit_Metervalue_Req">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>490</y>
+             <width>71</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Unit</string>
+           </property>
+          </widget>
+          <widget class="QComboBox" name="comboBox_unit_Metervalue_Req">
+           <property name="geometry">
+            <rect>
+             <x>110</x>
+             <y>490</y>
+             <width>201</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <item>
+            <property name="text">
+             <string>CELSIUS</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>FAHRENHEIT</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>WH</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>K_WH</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>VARH</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>KVARH</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>W</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>K_W</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>VA</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>K_VA</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>VAR</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>K_VAR</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>A</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>V</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>K</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>PERCENT</string>
+            </property>
+           </item>
+          </widget>
+          <widget class="QPushButton" name="pushButton_Send_Meter_Values_Req">
+           <property name="geometry">
+            <rect>
+             <x>50</x>
+             <y>540</y>
+             <width>211</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Send Meter Values Request</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="widget_Start_Transaction" native="true">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>90</y>
+            <width>641</width>
+            <height>801</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <strikeout>false</strikeout>
+           </font>
+          </property>
+          <property name="focusPolicy">
+           <enum>Qt::NoFocus</enum>
+          </property>
+          <property name="autoFillBackground">
+           <bool>true</bool>
+          </property>
+          <widget class="QLabel" name="label_28">
+           <property name="geometry">
+            <rect>
+             <x>460</x>
+             <y>20</y>
+             <width>61</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Response</string>
+           </property>
+          </widget>
+          <widget class="Line" name="line_13">
+           <property name="geometry">
+            <rect>
+             <x>310</x>
+             <y>0</y>
+             <width>16</width>
+             <height>801</height>
+            </rect>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_29">
+           <property name="geometry">
+            <rect>
+             <x>130</x>
+             <y>20</y>
+             <width>61</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Request</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_ConnectorID_Start_Transaction_Request">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>70</y>
+             <width>71</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Connector ID</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_Expirydate_Start_Transaction_Response">
+           <property name="geometry">
+            <rect>
+             <x>350</x>
+             <y>130</y>
+             <width>61</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Expiry Date</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_Expirydate_Start_Transaction_Response">
+           <property name="geometry">
+            <rect>
+             <x>430</x>
+             <y>120</y>
+             <width>171</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background:rgb(195,195,195)</string>
+           </property>
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_parentID_Start_Transaction_Response">
+           <property name="geometry">
+            <rect>
+             <x>430</x>
+             <y>60</y>
+             <width>171</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background:rgb(195,195,195)</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_parentID_Start_Transaction_Response">
+           <property name="geometry">
+            <rect>
+             <x>350</x>
+             <y>70</y>
+             <width>71</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Parent ID tag</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_Status_Start_Transaction_Response">
+           <property name="geometry">
+            <rect>
+             <x>350</x>
+             <y>180</y>
+             <width>61</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Status</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_TransactionID_Start_Transaction_Response">
+           <property name="geometry">
+            <rect>
+             <x>350</x>
+             <y>230</y>
+             <width>71</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Transaction ID</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_TransactionID_Start_Transaction_Response">
+           <property name="geometry">
+            <rect>
+             <x>430</x>
+             <y>220</y>
+             <width>171</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background:rgb(195,195,195)</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_ConnectorID_Start_Transaction_Request">
+           <property name="geometry">
+            <rect>
+             <x>110</x>
+             <y>60</y>
+             <width>171</width>
+             <height>31</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_Idtag_Start_Transaction_Request">
+           <property name="geometry">
+            <rect>
+             <x>110</x>
+             <y>120</y>
+             <width>171</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background:rgb(195,195,195)</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_Idtag_Start_Transaction_Request">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>130</y>
+             <width>71</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Id Tag</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_meterstart_Start_Transaction_Request">
+           <property name="geometry">
+            <rect>
+             <x>110</x>
+             <y>170</y>
+             <width>171</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background:rgb(195,195,195)</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_meterstart_Start_Transaction_Request">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>180</y>
+             <width>71</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Meter start</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_reservationid_Start_Transaction_Request">
+           <property name="geometry">
+            <rect>
+             <x>110</x>
+             <y>220</y>
+             <width>171</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background:rgb(195,195,195)</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_reservationid_Start_Transaction_Request">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>230</y>
+             <width>71</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Reservation Id</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_timestamp_Start_Transaction_Request">
+           <property name="geometry">
+            <rect>
+             <x>110</x>
+             <y>280</y>
+             <width>171</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background:rgb(195,195,195)</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_timestamp_Start_Transaction_Request">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>290</y>
+             <width>71</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Timestamp</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="pushButton_Send_Start_Transaction_Request">
+           <property name="geometry">
+            <rect>
+             <x>80</x>
+             <y>350</y>
+             <width>171</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Send Start Transaction Request</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_Status_Start_Transaction_Response">
+           <property name="geometry">
+            <rect>
+             <x>430</x>
+             <y>170</y>
+             <width>171</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background:rgb(195,195,195)</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="start_con_1">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>400</y>
+             <width>75</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>start_con_1</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="start_con_2">
+           <property name="geometry">
+            <rect>
+             <x>120</x>
+             <y>400</y>
+             <width>75</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>start_con_2</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="start_con_3">
+           <property name="geometry">
+            <rect>
+             <x>220</x>
+             <y>400</y>
+             <width>75</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>start_con_3</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="widget_StatusNotification" native="true">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>90</y>
+            <width>641</width>
+            <height>801</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <strikeout>false</strikeout>
+           </font>
+          </property>
+          <property name="focusPolicy">
+           <enum>Qt::NoFocus</enum>
+          </property>
+          <property name="autoFillBackground">
+           <bool>true</bool>
+          </property>
+          <widget class="QLabel" name="label_30">
+           <property name="geometry">
+            <rect>
+             <x>460</x>
+             <y>20</y>
+             <width>61</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Response</string>
+           </property>
+          </widget>
+          <widget class="Line" name="line_14">
+           <property name="geometry">
+            <rect>
+             <x>310</x>
+             <y>0</y>
+             <width>16</width>
+             <height>801</height>
+            </rect>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_31">
+           <property name="geometry">
+            <rect>
+             <x>130</x>
+             <y>20</y>
+             <width>61</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Request</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_ConnectorID_StatusNotification_Req">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>60</y>
+             <width>71</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Connector ID</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_ConnectorID_StatusNotification_Req">
+           <property name="geometry">
+            <rect>
+             <x>110</x>
+             <y>50</y>
+             <width>171</width>
+             <height>31</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_ErrorCode_StatusNotification_Req">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>110</y>
+             <width>71</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Error Code</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_Info_StatusNotification_Req">
+           <property name="geometry">
+            <rect>
+             <x>110</x>
+             <y>150</y>
+             <width>171</width>
+             <height>31</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_Info_StatusNotification_Req">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>160</y>
+             <width>71</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Info</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_Status_StatusNotification_Req">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>210</y>
+             <width>71</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Status</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_timestamp_StatusNotification_Req">
+           <property name="geometry">
+            <rect>
+             <x>110</x>
+             <y>250</y>
+             <width>171</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_timestamp_StatusNotification_Req">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>260</y>
+             <width>71</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Timestamp</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_32">
+           <property name="geometry">
+            <rect>
+             <x>400</x>
+             <y>90</y>
+             <width>191</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>No Response component data to show</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_VendorId_StatusNotification_Req">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>310</y>
+             <width>71</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Vendor id</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_VendorId_StatusNotification_Req">
+           <property name="geometry">
+            <rect>
+             <x>110</x>
+             <y>300</y>
+             <width>171</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_Vendorerrorcode_StatusNotification_Req">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>370</y>
+             <width>91</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Vendor error code</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_Vendorerrorcode_StatusNotification_Req">
+           <property name="geometry">
+            <rect>
+             <x>110</x>
+             <y>360</y>
+             <width>171</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QComboBox" name="comboBox_ErrorCode_StatusNotification_Req">
+           <property name="geometry">
+            <rect>
+             <x>110</x>
+             <y>100</y>
+             <width>171</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <item>
+            <property name="text">
+             <string>CONNECTOR_LOCK_FAILURE</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>EV_COMMUNICATION_ERROR</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>GROUND_FAILURE</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>HIGH_TEMPERATURE</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>INTERNAL_ERROR</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>LOCAL_LIST_CONFLICT</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>NO_ERROR</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>OTHER_ERROR</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>OVER_CURRENT_FAILURE</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>OTHER_VOLTAGE</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>POWER_METER_FAILURE</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>POWER_SWITCH_FAILURE</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>READER_FAILURE</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>RESET_FAILURE</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>UNDER_VOLTAGE</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>WEAK_SIGNAL</string>
+            </property>
+           </item>
+          </widget>
+          <widget class="QComboBox" name="comboBox_Status_StatusNotification_Req">
+           <property name="geometry">
+            <rect>
+             <x>110</x>
+             <y>200</y>
+             <width>171</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <item>
+            <property name="text">
+             <string>AVAILABLE</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>PREPARING</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>CHARGING</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>SUSPENDED_EV</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>SUSPENDED_EVSE</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>FINISHING</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>RESERVED</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>FAULTED</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>UNAVAILABLE</string>
+            </property>
+           </item>
+          </widget>
+          <widget class="QPushButton" name="pushButton_Status_Notification_Request">
+           <property name="geometry">
+            <rect>
+             <x>60</x>
+             <y>430</y>
+             <width>201</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Send Status Notification Request</string>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="widget_StopTransaction" native="true">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>90</y>
+            <width>641</width>
+            <height>801</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <strikeout>false</strikeout>
+           </font>
+          </property>
+          <property name="focusPolicy">
+           <enum>Qt::NoFocus</enum>
+          </property>
+          <property name="autoFillBackground">
+           <bool>true</bool>
+          </property>
+          <widget class="QLabel" name="label_33">
+           <property name="geometry">
+            <rect>
+             <x>460</x>
+             <y>20</y>
+             <width>61</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Response</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_IdTag_StopTransaction_Req">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>40</y>
+             <width>71</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>ID Tag</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_IdTag_StopTransaction_Req">
+           <property name="geometry">
+            <rect>
+             <x>110</x>
+             <y>40</y>
+             <width>161</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background:rgb(195,195,195)</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="Line" name="line_15">
+           <property name="geometry">
+            <rect>
+             <x>310</x>
+             <y>0</y>
+             <width>16</width>
+             <height>801</height>
+            </rect>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_34">
+           <property name="geometry">
+            <rect>
+             <x>130</x>
+             <y>20</y>
+             <width>61</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Request</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_Meterstop_StopTransaction_Req">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>70</y>
+             <width>71</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Meter stop</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_Meterstop_StopTransaction_Req">
+           <property name="geometry">
+            <rect>
+             <x>110</x>
+             <y>70</y>
+             <width>161</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background:rgb(195,195,195)</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_35">
+           <property name="geometry">
+            <rect>
+             <x>110</x>
+             <y>200</y>
+             <width>81</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>- Meter Values - </string>
+           </property>
+          </widget>
+          <widget class="QComboBox" name="comboBox_Metervalue_StopTransaction_Req">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>220</y>
+             <width>161</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <item>
+            <property name="text">
+             <string>Meter Values 0 </string>
+            </property>
+           </item>
+          </widget>
+          <widget class="QPushButton" name="pushButton_addmetervalue_stoptrans">
+           <property name="geometry">
+            <rect>
+             <x>190</x>
+             <y>220</y>
+             <width>41</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>+</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="pushButton_delmetervalue_stoptrans">
+           <property name="geometry">
+            <rect>
+             <x>240</x>
+             <y>220</y>
+             <width>41</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>-</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_36">
+           <property name="geometry">
+            <rect>
+             <x>110</x>
+             <y>250</y>
+             <width>81</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>- Meter Value - </string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_Timestamp_StopTransaction_Req_2">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>270</y>
+             <width>71</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Timestamp</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_Timestamp_StopTransaction_Req">
+           <property name="geometry">
+            <rect>
+             <x>110</x>
+             <y>270</y>
+             <width>161</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background:rgb(195,195,195)</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_37">
+           <property name="geometry">
+            <rect>
+             <x>110</x>
+             <y>300</y>
+             <width>81</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>- Meter Value - </string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="pushButton_delsampledvalue_StopTransaction_Req">
+           <property name="geometry">
+            <rect>
+             <x>240</x>
+             <y>320</y>
+             <width>41</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>-</string>
+           </property>
+          </widget>
+          <widget class="QComboBox" name="comboBox_Sampledvalue_StopTransaction_Req">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>320</y>
+             <width>161</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <item>
+            <property name="text">
+             <string>SampledValues 0 </string>
+            </property>
+           </item>
+          </widget>
+          <widget class="QPushButton" name="pushButton_addsampledvalue_StopTransaction_Req">
+           <property name="geometry">
+            <rect>
+             <x>190</x>
+             <y>320</y>
+             <width>41</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>+</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_value_StopTransaction_Req">
+           <property name="geometry">
+            <rect>
+             <x>110</x>
+             <y>350</y>
+             <width>161</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_value_StopTransaction_Req">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>350</y>
+             <width>71</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Value</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_context_StopTransaction_Req">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>380</y>
+             <width>71</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Context</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_format_StopTransaction_Req">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>410</y>
+             <width>71</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Format</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_measurand_StopTransaction_Req">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>440</y>
+             <width>71</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Measurand</string>
+           </property>
+          </widget>
+          <widget class="QComboBox" name="comboBox_context_StopTransaction_Req">
+           <property name="geometry">
+            <rect>
+             <x>110</x>
+             <y>380</y>
+             <width>161</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <item>
+            <property name="text">
+             <string>INTERRUPTION_BEGIN</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>INTERRUPTION_END</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>OTHER</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>SAMPLE_CLOCK</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>SAMPLE_PERIODIC</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>TRANSACTION_BEGIN</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>TRANSACTION_END</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>TRIGGER</string>
+            </property>
+           </item>
+          </widget>
+          <widget class="QComboBox" name="comboBox_format_StopTransaction_Req">
+           <property name="geometry">
+            <rect>
+             <x>110</x>
+             <y>410</y>
+             <width>161</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="inputMethodHints">
+            <set>Qt::ImhNone</set>
+           </property>
+           <item>
+            <property name="text">
+             <string>RAW</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>SIGNED_DATA</string>
+            </property>
+           </item>
+          </widget>
+          <widget class="QComboBox" name="comboBox_measurand_StopTransaction_Req">
+           <property name="geometry">
+            <rect>
+             <x>110</x>
+             <y>440</y>
+             <width>201</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <item>
+            <property name="text">
+             <string>CURRENT_EXPORT</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>CURRENT_IMPORT</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>CURRENT_OFFERED</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>ENERGY_ACTIVE_EXPORT_REGISTER</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>ENERGY_ACTIVE_IMPORT_REGISTER</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>ENERGY_REACTIVE_EXPORT_REGISTER</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>ENERGY_REACTIVE_IMPORT_REGISTER</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>ENERGY_ACTIVE_EXPORT_INTERVAL</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>ENERGY_ACTIVE_IMPORT_INTERVAL</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>ENERGY_REACTIVE_EXPORT_INTERVAL</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>ENERGY_REACTIVE_IMPORT_INTERVAL</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>FREQUENCY</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>POWER_ACTIVE_EXPORT</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>POWER_ACTIVE_IMPORT</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>POWER_FACTOR</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>POWER_OFFERED</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>POWER_REACTIVE_EXPORT</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>POWER_REACTIVE_IMPORT</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>RPM</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>SO_C</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>TEMPERATURE</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>VOLTAGE</string>
+            </property>
+           </item>
+          </widget>
+          <widget class="QComboBox" name="comboBox_phase_StopTransaction_Req">
+           <property name="geometry">
+            <rect>
+             <x>110</x>
+             <y>470</y>
+             <width>161</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <item>
+            <property name="text">
+             <string>L_1</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>L_2</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>L_3</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>N</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>L_1_N</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>L_2_N</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>L_3_N</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>L_1_L_2</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>L_2_L_3</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>L_3_L_1</string>
+            </property>
+           </item>
+          </widget>
+          <widget class="QLabel" name="label_phase_StopTransaction_Req">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>470</y>
+             <width>71</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Phase</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_location_StopTransaction_Req">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>500</y>
+             <width>71</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Location</string>
+           </property>
+          </widget>
+          <widget class="QComboBox" name="comboBox_location_StopTransaction_Req">
+           <property name="geometry">
+            <rect>
+             <x>110</x>
+             <y>500</y>
+             <width>161</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <item>
+            <property name="text">
+             <string>BODY</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>CABLE</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>EV</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>INLET</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>OUTLET</string>
+            </property>
+           </item>
+          </widget>
+          <widget class="QLabel" name="label_unit_StopTransaction_Req">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>530</y>
+             <width>71</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Unit</string>
+           </property>
+          </widget>
+          <widget class="QComboBox" name="comboBox_unit_StopTransaction_Req">
+           <property name="geometry">
+            <rect>
+             <x>110</x>
+             <y>530</y>
+             <width>161</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <item>
+            <property name="text">
+             <string>CELSIUS</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>FAHRENHEIT</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>WH</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>K_WH</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>VARH</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>KVARH</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>W</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>K_W</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>VA</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>K_VA</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>VAR</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>K_VAR</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>A</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>V</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>K</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>PERCENT</string>
+            </property>
+           </item>
+          </widget>
+          <widget class="QLabel" name="label_ConnectorID_StopTransaction_Req">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>100</y>
+             <width>71</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Connector ID</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_ConnectorID_StopTransaction_Req">
+           <property name="geometry">
+            <rect>
+             <x>110</x>
+             <y>100</y>
+             <width>161</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_Transaction_StopTransaction_Req">
+           <property name="geometry">
+            <rect>
+             <x>110</x>
+             <y>130</y>
+             <width>161</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background:rgb(195,195,195)</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_TransactionID_StopTransaction_Req">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>130</y>
+             <width>71</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Transaction ID</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_reason_StopTransaction_Req">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>170</y>
+             <width>71</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Reason</string>
+           </property>
+          </widget>
+          <widget class="QComboBox" name="comboBox_reason_StopTransaction_Req">
+           <property name="geometry">
+            <rect>
+             <x>110</x>
+             <y>170</y>
+             <width>161</width>
+             <height>21</height>
+            </rect>
+           </property>
+           <item>
+            <property name="text">
+             <string>OTHER</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>EMERGENCY_STOP</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>EV_DISCONNECTED</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>HARD_RESET</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>LOCAL</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>POWER_LOSS</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>REBOOT</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>REMOTE</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>SOFT_RESET</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>UNLOCK_COMMAND</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>DE_AUTHORIZED</string>
+            </property>
+           </item>
+          </widget>
+          <widget class="QLabel" name="label_ParentID_StopTransaction_Resp">
+           <property name="geometry">
+            <rect>
+             <x>350</x>
+             <y>100</y>
+             <width>71</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Parent ID</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_Expirydate_StopTransaction_Resp">
+           <property name="geometry">
+            <rect>
+             <x>350</x>
+             <y>60</y>
+             <width>71</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Expiry Date</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_Status_StopTransaction_Resp">
+           <property name="geometry">
+            <rect>
+             <x>350</x>
+             <y>140</y>
+             <width>71</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Status</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_Expirydate_StopTransaction_Resp">
+           <property name="geometry">
+            <rect>
+             <x>440</x>
+             <y>50</y>
+             <width>161</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background:rgb(195,195,195)</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_ParentID_StopTransaction_Resp">
+           <property name="geometry">
+            <rect>
+             <x>440</x>
+             <y>90</y>
+             <width>161</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background:rgb(195,195,195)</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_Status_StopTransaction_Resp">
+           <property name="geometry">
+            <rect>
+             <x>440</x>
+             <y>130</y>
+             <width>161</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background:rgb(195,195,195)</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="pushButton_Send_Stop_Transaction_Req">
+           <property name="geometry">
+            <rect>
+             <x>360</x>
+             <y>300</y>
+             <width>201</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Send Stop Transaction Request</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="stop_con_1">
+           <property name="geometry">
+            <rect>
+             <x>330</x>
+             <y>340</y>
+             <width>75</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>stop_con_1</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="stop_con_2">
+           <property name="geometry">
+            <rect>
+             <x>420</x>
+             <y>340</y>
+             <width>75</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>stop_con_2</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="stop_con_3">
+           <property name="geometry">
+            <rect>
+             <x>510</x>
+             <y>340</y>
+             <width>75</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>stop_con_3</string>
+           </property>
+          </widget>
+         </widget>
+         <zorder>pushButton_Diagnostics_Status_Notification</zorder>
+         <zorder>pushButton_Bootnotification</zorder>
+         <zorder>pushButton_Metervalues</zorder>
+         <zorder>pushButton_Datatransfer</zorder>
+         <zorder>pushButton_Firmware_Status_Notification</zorder>
+         <zorder>pushButton_StartTransaction</zorder>
+         <zorder>pushButton_Stop_Notification</zorder>
+         <zorder>pushButton_Authorize</zorder>
+         <zorder>pushButton_Heartbeat</zorder>
+         <zorder>pushButton_Status_Notification</zorder>
+         <zorder>widget_FirmwareStatusNotification</zorder>
+         <zorder>widget_HeartBeat</zorder>
+         <zorder>widget_bootnotification</zorder>
+         <zorder>widget_DataTransfer</zorder>
+         <zorder>widget_MeterValues</zorder>
+         <zorder>widget_Start_Transaction</zorder>
+         <zorder>widget_StopTransaction</zorder>
+         <zorder>widget_authorize</zorder>
+         <zorder>widget_DiagnosticsStatusNotification</zorder>
+         <zorder>widget_StatusNotification</zorder>
+        </widget>
+       </widget>
+       <widget class="QFrame" name="frame_2">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>10</y>
+          <width>251</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QLabel" name="frametext">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>5</y>
+           <width>231</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>9</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">textcolor:rgb(250, 250, 250)</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QLCDNumber" name="lcdNumber">
+        <property name="geometry">
+         <rect>
+          <x>480</x>
+          <y>10</y>
+          <width>171</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::WinPanel</enum>
+        </property>
+        <property name="digitCount">
+         <number>20</number>
+        </property>
+        <property name="segmentStyle">
+         <enum>QLCDNumber::Flat</enum>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>940</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QDockWidget" name="dockWidget">
+   <attribute name="dockWidgetArea">
+    <number>1</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents">
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0">
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <spacer name="horizontalSpacer">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>18</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_Add_CS">
+           <property name="text">
+            <string>+CS</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_2">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>28</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_Delete">
+           <property name="text">
+            <string>--</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_4">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>28</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <item>
+          <widget class="QLabel" name="label_9">
+           <property name="text">
+            <string>IP</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_10">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>98</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_4">
+         <item>
+          <widget class="QLineEdit" name="lineEdit_ip">
+           <property name="text">
+            <string>122.165.189.79</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_3">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>98</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_5">
+         <item>
+          <widget class="QLabel" name="label_10">
+           <property name="text">
+            <string>PORT</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_6">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>98</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_6">
+         <item>
+          <widget class="QLineEdit" name="lineEdit_port">
+           <property name="text">
+            <string>8080</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_5">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>98</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_9">
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_5">
+           <item>
+            <spacer name="verticalSpacer_9">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>28</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QFrame" name="frame_con1">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::WinPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_12">
+              <item row="0" column="0">
+               <widget class="QLabel" name="label_88">
+                <property name="font">
+                 <font>
+                  <pointsize>10</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">color:rgb(255, 255, 255)</string>
+                </property>
+                <property name="text">
+                 <string>Connector 1</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <spacer name="verticalSpacer_10">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>18</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QFrame" name="frame_con2">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::WinPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_13">
+              <item row="0" column="0">
+               <widget class="QLabel" name="label_89">
+                <property name="font">
+                 <font>
+                  <pointsize>10</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">color:rgb(255, 255, 255)</string>
+                </property>
+                <property name="text">
+                 <string>Connector 2</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <spacer name="verticalSpacer_11">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>18</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QFrame" name="frame_con3">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::WinPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_14">
+              <item row="0" column="0">
+               <widget class="QLabel" name="label_90">
+                <property name="font">
+                 <font>
+                  <pointsize>10</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">color:rgb(255, 255, 255)</string>
+                </property>
+                <property name="text">
+                 <string>Connector 3</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <spacer name="verticalSpacer_12">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>18</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QFrame" name="frame_con4">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::WinPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_15">
+              <item row="0" column="0">
+               <widget class="QLabel" name="label_91">
+                <property name="font">
+                 <font>
+                  <pointsize>10</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">color:rgb(255, 255, 255)</string>
+                </property>
+                <property name="text">
+                 <string>Connector 4</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_12">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_6">
+           <item>
+            <spacer name="verticalSpacer_13">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>28</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QFrame" name="frame_con5">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::WinPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_16">
+              <item row="0" column="0">
+               <widget class="QLabel" name="label_92">
+                <property name="font">
+                 <font>
+                  <pointsize>10</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">color:rgb(255, 255, 255)</string>
+                </property>
+                <property name="text">
+                 <string>Connector 5</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <spacer name="verticalSpacer_14">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>18</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QFrame" name="frame_con6">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::WinPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_17">
+              <item row="0" column="0">
+               <widget class="QLabel" name="label_93">
+                <property name="font">
+                 <font>
+                  <pointsize>10</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">color:rgb(255, 255, 255)</string>
+                </property>
+                <property name="text">
+                 <string>Connector 6</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <spacer name="verticalSpacer_15">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>18</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QFrame" name="frame_con7">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::WinPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_18">
+              <item row="0" column="0">
+               <widget class="QLabel" name="label_94">
+                <property name="font">
+                 <font>
+                  <pointsize>10</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">color:rgb(255, 255, 255)</string>
+                </property>
+                <property name="text">
+                 <string>Connector 7</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <spacer name="verticalSpacer_16">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>18</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QFrame" name="frame_con8">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::WinPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_19">
+              <item row="0" column="0">
+               <widget class="QLabel" name="label_95">
+                <property name="font">
+                 <font>
+                  <pointsize>10</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">color:rgb(255, 255, 255)</string>
+                </property>
+                <property name="text">
+                 <string>Connector 8</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QDockWidget" name="dockWidget_4">
+   <attribute name="dockWidgetArea">
+    <number>1</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents_4">
+    <layout class="QGridLayout" name="gridLayout_11">
+     <item row="0" column="0" rowspan="2" colspan="2">
+      <widget class="QTableWidget" name="tableWidget">
+       <property name="alternatingRowColors">
+        <bool>true</bool>
+       </property>
+       <property name="gridStyle">
+        <enum>Qt::DashDotLine</enum>
+       </property>
+       <property name="sortingEnabled">
+        <bool>true</bool>
+       </property>
+       <column>
+        <property name="text">
+         <string>IdTag</string>
+        </property>
+        <property name="font">
+         <font>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="textAlignment">
+         <set>AlignCenter</set>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>ExpiredDate</string>
+        </property>
+        <property name="font">
+         <font>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="textAlignment">
+         <set>AlignCenter</set>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Parent IdTag</string>
+        </property>
+        <property name="font">
+         <font>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="textAlignment">
+         <set>AlignCenter</set>
+        </property>
+       </column>
+      </widget>
+     </item>
+    </layout>
+    <widget class="QPushButton" name="lockcon1">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>60</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>lockcon1</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="lockcon2">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>100</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>lockcon2</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="lockcon3">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>140</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>lockcon3</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QDockWidget" name="dockWidget_6">
+   <attribute name="dockWidgetArea">
+    <number>1</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents_6">
+    <layout class="QGridLayout" name="gridLayout_10">
+     <item row="0" column="0">
+      <layout class="QHBoxLayout" name="horizontalLayout_8">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <item>
+          <spacer name="verticalSpacer_4">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>28</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QFrame" name="frame_11">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::WinPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_3">
+            <item row="0" column="0">
+             <widget class="QLabel" name="label_80">
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color:rgb(255, 255, 255)</string>
+              </property>
+              <property name="text">
+               <string>Connector 1</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <spacer name="verticalSpacer">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>18</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QFrame" name="frame_22">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::WinPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_2">
+            <item row="0" column="0">
+             <widget class="QLabel" name="label_81">
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color:rgb(255, 255, 255)</string>
+              </property>
+              <property name="text">
+               <string>Connector 2</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <spacer name="verticalSpacer_2">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>18</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QFrame" name="frame_33">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::WinPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_4">
+            <item row="0" column="0">
+             <widget class="QLabel" name="label_82">
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color:rgb(255, 255, 255)</string>
+              </property>
+              <property name="text">
+               <string>Connector 3</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <spacer name="verticalSpacer_3">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>18</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QFrame" name="frame_44">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::WinPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_5">
+            <item row="0" column="0">
+             <widget class="QLabel" name="label_83">
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color:rgb(255, 255, 255)</string>
+              </property>
+              <property name="text">
+               <string>Connector 4</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_11">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_4">
+         <item>
+          <spacer name="verticalSpacer_5">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>28</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QFrame" name="frame_55">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::WinPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_6">
+            <item row="0" column="0">
+             <widget class="QLabel" name="label_84">
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color:rgb(255, 255, 255)</string>
+              </property>
+              <property name="text">
+               <string>Connector 5</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <spacer name="verticalSpacer_6">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>18</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QFrame" name="frame_66">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::WinPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_7">
+            <item row="0" column="0">
+             <widget class="QLabel" name="label_85">
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color:rgb(255, 255, 255)</string>
+              </property>
+              <property name="text">
+               <string>Connector 6</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <spacer name="verticalSpacer_7">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>18</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QFrame" name="frame_77">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::WinPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_8">
+            <item row="0" column="0">
+             <widget class="QLabel" name="label_86">
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color:rgb(255, 255, 255)</string>
+              </property>
+              <property name="text">
+               <string>Connector 7</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <spacer name="verticalSpacer_8">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>18</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QFrame" name="frame_88">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::WinPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_9">
+            <item row="0" column="0">
+             <widget class="QLabel" name="label_87">
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color:rgb(255, 255, 255)</string>
+              </property>
+              <property name="text">
+               <string>Connector 8</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
